@@ -1,0 +1,52 @@
+
+#pocket-button,
+#star-button,
+#pageActionButton,
+#extension-icon,
+#identity-icon
+{
+  display: none !important;
+  background: transparent !important;
+}
+/* Borders inside URL bar */
+ #identity-box {
+   border: 0 !important;
+   padding: 0 6px 0px 2px !important;
+ }
+
+
+/* Hide the back button unless we can actually go back. */
+ #back-button[disabled="true"] {
+   display: none;
+ }
+ 
+ /* Hide the forward button always */
+ #forward-button[disabled="true"] {
+   display: none;
+ }
+
+ #urlbar{
+  text-align: center !important;
+  color: var(--tcolor) !important;
+  background-color: var(--mcolor) !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  --toolbarbutton-border-radius: 0px !important;
+  margin: 0 !important;
+}
+
+
+.titlebar-spacer {
+  display: none !important;
+}
+
+
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+   display: none !important;
+}
+
+#PanelUI-button {
+    -moz-box-ordinal-group: 0;
+    position: absolute;
+}
